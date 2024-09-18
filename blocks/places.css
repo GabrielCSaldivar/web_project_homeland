@@ -70,14 +70,14 @@
   align-items: center;
   color: white;
   font-size: 18px;
-  background-image: linear-gradient(#0278FE, #003A7B);
+  background-image: linear-gradient(rgba(2, 120, 254, 1), rgba(0, 58, 123, 1));
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   text-decoration: none;
 }
 
 .places__button:hover {
-  background-image: linear-gradient(rgba(2, 120, 254, 0.25), rgba(0, 58.19, 123.44, 0.25))
+  background-image: linear-gradient(rgba(2, 120, 254, 0.25), rgba(0, 58, 123, 0.25))
 }
 
 .places__website {
