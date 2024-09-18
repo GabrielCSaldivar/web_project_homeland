@@ -1,0 +1,202 @@
+.places {
+  max-width: 77.1%;
+  margin: 92px auto 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.places__grid {
+  display: grid;
+  gap: 48px 4%;
+  grid-template-columns: 46.75% auto;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+  "primera cuarta"
+  "segunda quinta"
+  "tercera quinta";
+}
+
+.places__1 {
+  grid-area: primera;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.places__2 {
+  grid-area: segunda;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.50)
+}
+
+.places__3 {
+  grid-area: tercera;
+}
+
+.places__4 {
+  grid-area: cuarta;
+}
+
+.places__5 {
+  grid-area: quinta;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.places__title {
+  margin: 0;
+  font-size: 72px;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.places__image {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.places__image:hover {
+  filter: brightness(50%)
+}
+
+.places__button {
+  width: 289px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  background: linear-gradient(90deg, #0278FE 0%, #003A7B 100%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.places__button:hover {
+  background: linear-gradient(90deg, rgba(2, 120, 254, 0.25) 0%, rgba(0, 58.19, 123.44, 0.25) 100%)
+}
+
+.places__website {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.places__url-heading {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  color: #AAAAAA
+}
+
+.places__artist {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.375;
+  }
+
+.places__paragraph {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.63;
+  }
+
+  @media screen and (max-width: 1120px) {
+
+    .places__title {
+      font-size: 56px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .places {
+      max-width: 92.5%;
+      margin: 82px auto 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 72px;
+    }
+
+    .places__title {
+      font-size: 42px;
+    }
+
+    .places__paragraph {
+      font-size: 16px;
+      }
+
+    .places__button {
+      max-width: 85%;
+      max-height: 48px;
+    }
+  }
+
+  @media screen and (max-width: 710px) {
+
+    .places__button {
+      max-width: 100%;
+      font-size: 14px;
+    }
+
+    .places__paragraph {
+      font-size: 14px;
+      }
+  }
+
+  @media screen and (max-width: 560px) {
+
+    .places__title {
+      font-size: 28px;
+    }
+
+    .places__button {
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+
+    .places {
+      max-width: 100%;
+      margin: 62px auto 0;
+      gap: 50px;
+    }
+
+    .places__grid {
+      display: grid;
+      gap: 30px 0;
+      grid-template-columns: 5% 90% 5%;
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas:
+      ". primera ."
+      ". cuarta ."
+      "segunda segunda segunda"
+      ". quinta ."
+      ". tercera .";
+    }
+
+    .places__title {
+      font-size: 32px;
+    }
+
+    .places__paragraph {
+      font-size: 16px;
+      }
+
+    .places__button {
+      max-width: 100%;
+      padding: 0;
+      height: 48px;
+      font-size: 14px;
+    }
+
+  }
