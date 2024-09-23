@@ -176,6 +176,10 @@
       font-size: 32px;
     }
 
+    .places__2 {
+      box-shadow: none;
+    }
+
     .places__paragraph {
       font-size: 16px;
       }
